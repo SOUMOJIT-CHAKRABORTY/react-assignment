@@ -17,7 +17,7 @@ const Navbar = () => {
           Animated UI
         </motion.span>
         <div className="social">
-          <Link href="/about">
+          <Link to="/about">
             <motion.span
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
