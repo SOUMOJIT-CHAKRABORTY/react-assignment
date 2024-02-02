@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
@@ -16,7 +17,7 @@ const Navbar = () => {
           Animated UI
         </motion.span>
         <div className="social">
-          <a href="/about">
+          <Link href="/about">
             <motion.span
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -24,7 +25,7 @@ const Navbar = () => {
             >
               About us
             </motion.span>
-          </a>
+          </Link>
           <a href="#">
             <img src="/facebook.png" alt="" />
           </a>
